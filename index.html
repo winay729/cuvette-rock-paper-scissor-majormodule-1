@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="index.js"></script>
+    <script src="index1.js"></script>
+</head>
+<body>
+    
+    <div class="container" id="reset-container">
+        <button class="btn" id="reset-btn" onclick="reset()">Reset</button>
+    </div>
+    <div class="container" id="main">
+        <div class="container" id="scoreboard">
+            <div><h1 id="title-heading">ROCK<br>PAPER<br>SCISSOR</h1></div>
+            <div class="scores " id="computer-score">
+                <h3 class="score-heading">COMPUTER SCORE</h3>
+                <label id="computer-score-label">0</label>
+            </div>
+            <div class="scores " id="user-score">
+                <h3 class="score-heading">USER SCORE</h3>
+                <label id="user-score-label">0</label>
+            </div>
+        </div>
+        <!--end of score board container-->
+        <div class="container" id="rock-paper-scissor-buttons">
+            <div class="container" id="rock-scissor">
+                <div class="container circle" id="rock-button">
+                    <button class="no-border-bg" onclick="userclicked('rock')">
+                        <img src="assets/images/rock.png" alt="rock">
+                    </button>
+                </div>
+                <div class="stripe" ></div>
+                <div class="container circle" id="scissor-button">
+                    <button class="no-border-bg" onclick="userclicked('scissor')">
+                        <img src="assets/images/scissor.png" alt="scissor">
+                    </button>
+                </div>
+            </div>
+            <div class="stripe"></div>
+            <div class="container" id="paper">
+                <div class="container circle" id="paper-button">
+                    <button class="no-border-bg" onclick="userclicked('paper')">
+                        <img src="assets/images/paper.png" alt="paper">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--end of rock paper scissor buttons container-->
+        <div class="container" id="user-computer-clicks">
+            
+            <div class="container" id="headings">
+                <div class="container heading">YOU PICKED</div>
+                <div class="stripe" id="heading-stripe" style="display: none;"></div>
+                <div class="container heading">COMPUTER PICKED</div>
+            </div>
+            <div class="container" id="circles">
+                <div class="container circle" id="user-picked-container" >
+                    <img src="assets/images/paper.png" alt="users choice" id="user-picked">
+                </div>
+                <div class="container" id="decision">
+                    <p id="decision-content">YOU LOST AGAINST PC</p>
+                    <button class="play-again btn" id="playAgain-btn" onclick="tie_lose_playAgain()">PLAY AGAIN</button>
+                </div>
+                <div class="container circle" id="computer-picked-container" >
+                    <img src="assets/images/paper.png" alt="computers choice" id="computer-picked">
+                </div>
+            </div>
+            
+        </div>
+        <!--rules container-->
+        <div class="container" id="rules-section">
+            <div id="rulesbox">
+                <div class="container">
+                    <button onclick="closeRules()" id="closebtn">X</button>
+                </div>
+                <h2 id="rules-box-title">Game Rules</h5>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you will count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+            </div>
+            <button class="btn" onclick="openRules()">RULES</button>
+        </div>
+    </div>
+</body>
+</html>

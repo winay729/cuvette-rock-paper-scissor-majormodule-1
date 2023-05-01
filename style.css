@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+#reset-container{
+    background-color: brown;
+    position: absolute;
+}
+
+#user-score-label, #computer-score-label{
+    color: red;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+#main{
+    background-color: silver;
+    height: 100vh;
+    width:max-width;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#scoreboard{
+    flex-direction: row;
+    justify-content: space-around;
+    width:auto;
+    border: 5px solid white;
+    border-radius:10px;
+    padding:10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.1em;
+    flex-wrap: wrap;
+    /* position: absolute;
+    top:10%; */
+}
+
+#title-heading{
+    color: white;
+    
+}
+
+.scores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    margin:10px;
+    border-radius: 10px;
+}
+
+#rock-paper-scissor-buttons{
+    flex-direction: column;
+    align-items: center;
+    width:100vw;
+    flex-wrap: wrap;
+    /* display: none; */
+}
+
+#rock-scissor{
+    /* background-color: blue; */
+    width:100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.stripe{
+    height:70px;
+    width:100px;
+}
+
+
+
+.circle{
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.no-border-bg{
+    background-color: transparent;
+    border: none;
+}
+
+#rock-button{
+    border: 10px solid rgb(15, 185, 227);
+}
+
+#scissor-button{
+    border: 10px solid blueviolet;
+}
+
+#paper-button{
+    border: 10px solid orange;
+}
+
+#rules-section{
+    width:100%;
+    justify-content: flex-end;
+    padding:10px;
+}
+
+#rulesbox{
+    background-color: transparent;
+    color:white;
+    max-width: 30%;
+    padding: 10px;
+    margin:10px;
+    border: 5px solid white;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    position: absolute;
+    bottom:10%;
+    display: none;
+}
+
+#closebtn{
+    color: white;
+    background-color: red;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 100%;
+    padding:5px;
+    font-weight: bold;
+    /* position: absolute; */
+}
+
+#rulesbox .container{
+    justify-content: flex-end;
+}
+
+ul{
+    /* list-style-type: none; */
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+#rules-box-title{
+    position:relative;
+    left: 25%;
+    text-decoration: underline;
+}
+
+.btn{
+    background-color: transparent;
+    border: 5px solid white;
+    padding:5px;
+    margin:5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
